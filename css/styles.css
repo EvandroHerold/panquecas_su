@@ -78,7 +78,7 @@ h2 {
 
 .rodape {
 	color: #f2f5c5;
-	margin-top: 5em;
+	margin-top: 1em;
 	color: ;
 	text-align: center;
 }
@@ -91,6 +91,25 @@ h2 {
 
 .rodape__conteudo {
 	margin-top: 2em;
+}
+
+.rodape__imagem {
+	width: 30%;
+}
+
+.menu__panquecas__caixa {
+	color: #F5DEB3;
+	background: #D358F7;
+	width: 90vw;
+    text-align: center;
+    border: 1px solid;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin: 1.5rem auto;
+}
+
+.menu__panquecas__imagem {
+	width: 60vw;
 }
 
 @media (min-width: 720px) {
@@ -141,9 +160,43 @@ h2 {
 		text-align: ;
 	}
 
+	.menu__panquecas {
+		display: grid;
+		grid-template-areas:
+		"bolonhesa frango"
+		"hotdog bacon";
+	}
+
+	.menu__panquecas__caixa{
+		width: 40vw;
+	}
+
+	.menu__panquecas__imagem {
+		width: 25vw;
+	}
+
+	.rodape__caixa {
+		display: flex;
+		align-items: center;
+	}
+
+	.rodape__imagem {
+		grid-area: logo;
+		width: 20vw;
+	}
+
+	.rodape__conteudo {
+		grid-area: texto;
+		padding: 2em;
+
+	}
 }
 
 @media (min-width: 1080px){
+	body {
+		margin: 0 3em;
+	}
+
 	.cabecalho__imagem {
 		width: 30vw;
 	}
@@ -157,7 +210,7 @@ h2 {
 	}
 
 	.cardapios__panquecas__imagem {
-		width: 40vw;
+		width: 30vw;
 	}
 
 	.cardapios__panquecas p {
@@ -165,7 +218,7 @@ h2 {
 	}
 
 	.cardapios__marmitas__imagem {
-		width: 40vw;
+		width: 30vw;
 	}
 
 	.cardapios__marmitas p {
